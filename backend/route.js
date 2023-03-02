@@ -32,16 +32,16 @@ app.get("/item", async (req, res) => {
     .catch(err => res.status(500).json('Error: ' + err));
    });
 
-//    app.post('/update/:id', async (req, res) => {
-//   const updateItem =  await ItemModel.findByIdAndUpdate(req.params.id, req.body)
-//     .then(() => {
-//       console.log("update line is being hit");
-//       res.json('updated');
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).json('Error: ' + err);
-//     });
-// });
+   app.post('/update/:id', async (req, res) => {
+  const updateItem =  await ItemsModel.findByIdAndUpdate(req.params.id, req.body)
+    .then(() => {
+      console.log("update line is being hit");
+      res.json('updated');
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json('Error: ' + err);
+    });
+});
 
 module.exports = app
