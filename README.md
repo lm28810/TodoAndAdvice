@@ -1,10 +1,27 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with React.js and can be found at [Create React App](https://modulefinal.onrender.com). This is a lifehack web app, it provides users the ability to recieve positive advice at the click of a button while at the same time keeping track of their everyday todo lists. 
+
+# How To Use
+To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
+
+# Clone this repository
+$ git clone https://github.com/amitmerchant1990/electron-markdownify
+
+# Go into the repository
+$ cd client
+
+# Install dependencies
+$ npm install 
+$ cd backend && npm install 
+
+# Run the app
+$ npm start
+Note If you're using Linux Bash for Windows, see this guide or use node from the command prompt.
 
 ## Available Scripts
 
-In the project directory, you can run:
+If you wish to run this app in your personal developers enviornment, follow the following:
 
 ### `npm start`
 
@@ -39,32 +56,25 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+# Technologies Used
+- React.js
+- RapidApi Advice Api
+- CSS
+- HTML
+- MongoDB
+-Express
+- For a longer list please see the package.json
+
+# Future Enhancements
+
+in the future this app will gain more functunality such as a clock, a timer, a notepad, and other essential functions that make up a great productivity app. 
+
+## Unsolved Problems:
+
+TBD
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
