@@ -8,7 +8,7 @@ function TodoList() {
      const { itemId } = useParams 
 
   useEffect(() => {
-    axios.get('http://localhost:4000/item')
+    axios.get('/item')
       .then(response => {
           setItems(response.data);
           console.log(response.data)
@@ -24,7 +24,7 @@ function TodoList() {
 
     const handleAddItem = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:4000/add', { name: inputValue })
+        axios.post('/add', { name: inputValue })
       .then(response => {
         setItems([...items, response.data]);
         setInputValue('');
@@ -38,7 +38,7 @@ function TodoList() {
 //     await axios.delete(`http://localhost:4000/items/${id}`);
 
   const handleEditItem = (itemId, newText) => {
-    axios.post(`http://localhost:4000/update/${itemId}`, { name: newText })
+    axios.post(`/update/${itemId}`, { name: newText })
       .then(response => {
         const updatedItems = items.map(item => {
           if (item._id === itemId) {
@@ -54,7 +54,7 @@ function TodoList() {
   };
 
   const handleDeleteItem = (itemId) => {
-    axios.delete(`http://localhost:4000/${itemId}`)
+    axios.delete(`/${itemId}`)
       .then(response => {
         const filteredItems = items.filter(item => item._id !== itemId);
         setItems(filteredItems);
