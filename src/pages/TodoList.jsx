@@ -81,7 +81,6 @@ function TodoList() {
               onChange={(event) => handleEditItem(item._id, event.target.value)}
             />
                 <button onClick={() => handleDeleteItem(item._id)}>Delete</button>
-                {/* <button onClick={() => handleEditItem(item._id)}>Edit</button> */}
                 
           </li>
         ))}
