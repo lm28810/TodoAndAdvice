@@ -4,13 +4,14 @@ const app = express();
 const mongoose = require("mongoose");
 const path = require("path")
 const Router = require("./route");
+const cors = require('cors')
 
 const PORT = process.env.PORT || 4000; 
 const dotenv = require("dotenv");
 dotenv.config();
 
 app.use(express.json());
-
+app.use(cors())
 const uri = process.env.ATLAS_URI;
 mongoose.connect( uri, 
     {
