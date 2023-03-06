@@ -42,6 +42,10 @@ app.get("/item", async (req, res) => {
       console.log(err);
       res.status(500).json('Error: ' + err);
     });
+   });
+
+   app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
 module.exports = app
