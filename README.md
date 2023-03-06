@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was created with React.js and can be found at [Create React App](https://modulefinal.onrender.com). This is a lifehack web app, it provides users the ability to recieve positive advice at the click of a button while at the same time keeping track of their everyday todo lists. 
+This project was created with React.js and can be found at [Create React App](https://adviceandtodo.onrender.com/item). This is a lifehack web app, it provides users the ability to recieve positive advice at the click of a button while at the same time keeping track of their everyday todo lists. 
 
 # How To Use
 To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
